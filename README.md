@@ -1,3 +1,11 @@
+git clone [osmwebsite git url]
+cd openstreetmap-website
+bundle install
+install postgres (postgres app)
+create database openstreetmap;
+create extension btree_gist;
+rake db:migrate RAILS_ENV=development
+
 # "The Rails Port"
 
 This is The Rails Port, the [Ruby on Rails](http://rubyonrails.org/)
